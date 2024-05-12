@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+   margin: 200px;
+}
+
+.box-1, .box-2, .box-3{
+    padding: 50px;
+    margin: 50px;
+    border: 10px solid;
+}
+
+.box-1{
+    background-color: red;
+}
+
+.box-2{
+    background-color: blue;
+}
+
+.box-3{
+    background-color: green;
+}

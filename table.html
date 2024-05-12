@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with User Input</title>
+<style>
+body{
+  text-align: center;
+}
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  th,td {
+    padding: 8px;
+    border: 1px solid;
+    text-align: left; 
+  }
+
+  
+</style>
+</head>
+<body>
+
+<h2>Create a Table with User Input</h2>
+
+<form id="tableForm">
+  <label for="rows">Number of Rows:</label>
+  <input type="number" id="rows" name="rows" min="1"><br><br>
+  
+  <label for="columns">Number of Columns:</label>
+  <input type="number" id="columns" name="columns" min="1"><br><br>
+  
+  <button type="button" onclick="createTable()">Create Table</button>
+</form>
+
+<table id="myTable" >
+ 
+</table>
+
+
+<script>
+  function createTable() {
+    var rows = document.getElementById('rows').value;
+    var columns = document.getElementById('columns').value;
+    
+    var table = document.getElementById('myTable');
+    table.innerHTML = ''; 
+
+    for (var i = 0; i < rows; i++) {
+      var row = table.insertRow();
+      for (var j = 0; j < columns; j++) {
+        var cell = row.insertCell();
+        cell.textContent = 'Row ' + (i + 1) + ', Col ' + (j + 1);
+      }
+    }
+  }
+</script>
+
+</body>
+</html>

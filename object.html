@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Objects</h1>
+    <p id="display-1"></p><br>
+    <p id="display-2"></p><br>
+    <p id="display-3"></p>
+
+    <script>
+        const user={
+            name:"siva",
+            id:"CD401",
+            position:"intern",
+            location:"APK"
+        };
+        
+        let obj = JSON.stringify(user);
+        
+        document.getElementById("display-1").innerHTML = "Name:" + user.name +" " +"Id:" + user.id;
+        document.getElementById("display-2").innerHTML = Object.values(user);
+        document.getElementById("display-3").innerHTML = obj;
+
+    </script>
+</body>
+</html>

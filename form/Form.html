@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./Form.css">
+</head>
+<body>
+  <div class="form-container">
+    
+    <h2>Registration Form</h2>
+  <form action="">
+    <div class="container">
+
+      <div class="contant">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+      </div>
+
+      <div class="contant">
+        <label for="name"><b>Email:</b></label>
+        <input type="text" name="email" id="email" placeholder="Enter Email" required>
+      </div>
+
+      <div class="contant">
+         <label for="name"><b>Password:</b></label>
+         <input type="password" name="password" id="password" placeholder="Enter Password" required>
+      </div>
+
+      <div class="contant">
+        <label for="name"><b>Phone NO:</b></label>
+        <input type="number" name="phone" id="phone" placeholder="Enter Phone Number"  required>
+      </div>
+
+      
+      <div class="contant">
+        <label for="gender"><b>Gender:</b></label>
+        <select id="cars" name="cars">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="trangender">Trangender</option>
+        </select><br>
+      </div>
+      
+      <div class="contant">
+        <label for="dob"><b>Date of Birth:</b></label>
+        <input type="date" value="MM-DD-YYYY" name="dob" id="dob" required>
+      </div>
+
+      <div class="contant">
+        <label for="photo"><b>Upload Photo:</b></label>
+        <input type="file" name="photo" id="photo" required>
+      </div>
+
+
+      <div class="contant">
+        <button type="submit" id="submit" >Submit</button>
+      </div>
+    </div>
+  
+  </form>
+  </div>
+</body>
+</html>

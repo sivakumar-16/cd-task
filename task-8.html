@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice,slice</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name:'siva',
+            age:23,
+            city:'covai'
+        }
+        delete(user.age);
+        console.log(user);
+
+        let fruits=['apple','orange','mango','banana','tomato'];
+        fruits.splice(1,1,'jack')//delete orange and add jack
+        console.log(fruits);
+
+       let three = fruits.slice(1,4)//copy jack,mango,banana from fruits
+        console.log(three);
+    </script>
+</body>
+</html>

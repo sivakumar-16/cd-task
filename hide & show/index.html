@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hide & Show</title>
+ <link rel="stylesheet" href="./style.css">
+ <!-- <script src="./script.js"></script> -->
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+    <a href="https://crystaldelta.com/"><img src="./images/cricketlogo.jpeg" alt="cd img" height="60px" ></a>
+  </div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=ipl" target="_blank">IPL</a></li>
+      <li><a href="https://www.icc-cricket.com/" target="_blank">ICC</a></li>
+      <li><a href="https://www.bcci.tv/players" target="_blank">PLAYERS</a></li>
+    </ul>
+    </div>
+
+  </nav>
+  <div class="container">
+
+    <div class="box">
+      <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=virat"><img src="./images/virat.webp" alt="">
+      <h3>Virat Kholi</h3></a>
+      <p>Virat Kohli is an Indian international cricketer and the former captain of the Indian national cricket team. He is a right-handed batsman and an occasional medium-fast bowler</p>
+    </div>
+    
+    <div class="box">
+      <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=bumrah"><img src="./images/bumrah1.jpeg" alt="">
+      <h3>Bumrah</h3></a>
+      <p>Jasprit Jasbirsingh Bumrah is an Indian international cricketer who plays for the Indian cricket team in all formats of the game. A right-arm fast bowler with a unique bowling action,</p>
+    </div>
+    
+    <div class="box">
+      <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=gill"><img src="./images/gill.jpeg" alt="">
+      <h3>Subman Gill</h3></a>
+      <p>Shubman Gill is an Indian international cricketer who represents the Indian cricket team across all three formats. He is the captain of the Gujarat Titans in the Indian Premier League and plays for Punjab in domestic cricket.</p>
+    </div>
+    
+    <div class="box">
+      <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=kl+rahul"><img src="./images/kl.jpeg" alt="">
+      <h3>KL Ragul</h3></a>
+      <p>Kannur Lokesh Rahul is an Indian international cricketer. A right-handed wicket-keeping batsman, Rahul captains the Lucknow Super Giants in the Indian Premier League</p>
+    </div>
+    
+    <div class="box">
+      <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=rohit"><img src="./images/rohit1.jpeg" alt="">
+        <h3>Rohit Sharma</h3></a>
+        <p>Rohit Gurunath Sharma is an Indian international cricketer who currently captains the India national cricket team across all formats. He is a right-handed batsman</p>
+      </div>
+
+      <div class="box">
+        <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=gill"><img src="./images/jadeja.jpeg" alt="">
+        <h3>Jadeja</h3></a>
+        <p>Jadejs is an Indian international cricketer who represents the Indian cricket team across all three formats. He is the captain of the Gujarat Titans in the Indian Premier League and plays for Punjab in domestic cricket.</p>
+      </div>
+      
+      
+   
+    <div id="show" class="container" style="display: none;">
+
+      <div class="box">
+        <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=gill"><img src="./images//ashwin.jpeg" alt="">
+        <h3>Ashwin</h3></a>
+        <p>Ashwin is an Indian international cricketer who represents the Indian cricket team across all three formats. plays for Punjab in domestic cricket.</p>
+      </div>
+      
+      <div class="box">
+        <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=kl+rahul"><img src="./images/kl.jpeg" alt="">
+        <h3>KL Ragul</h3></a>
+        <p>Kannur Lokesh Rahul is an Indian international cricketer. A right-handed wicket-keeping batsman, Rahul captains the Lucknow Super Giants in the Indian Premier League</p>
+      </div>
+      
+      <div class="box">
+        <a href="https://www.google.com/search?channel=fs&client=ubuntu-sn&q=rohit"><img src="./images/rohit1.jpeg" alt="">
+        <h3>Rohit Sharma</h3></a>
+        <p>Rohit Gurunath Sharma is an Indian international cricketer who currently captains the India national cricket team across all formats. He is a right-handed batsman</p>
+      </div>
+    </div>
+    
+    <div class="button">
+      <button onclick= "hideElement()">Next</button>
+  </div>
+    
+  </div>
+  <footer>
+    <img src="./images/icc.svg" alt="" height="20px">
+    <p>Copyright 2024 ICC. All rights reserved.</p>
+    </footer>
+    <script>
+
+function hideElement() {
+  let element=document.getElementById('show');
+  const btn = document.querySelector('button');
+  if (btn.innerText === 'Next') {
+                btn.innerText = 'Previous';
+            } else {
+                btn.innerText = 'Next';
+            }
+  
+    if (element.style.display === 'none' ) {
+        element.style.display = 'block' ;
+        element.style.display = 'flex';
+    } else {
+        
+        element.style.display = 'none';
+    }
+    
+}
+    </script>
+</body>
+</html>
